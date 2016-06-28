@@ -34,7 +34,7 @@ final class fibonacci {
     public function calculate($number) {
         //normalisation
         $number = intval($number);
-        return $number < 0 ? false : isset($this->memory[$number]) ? $this->memory[$number] : $this->memory[$number] = $this->calculate($number - 1) + $this->calculate($number - 2);
+        return $number < 0 ? false : isset($this->memory[$number]) ? $this->memory[$number] : $this->memory[$number] = bcadd($this->calculate(bcadd($number, -1)), $this->calculate(bcadd($number, -2)));
     }
 }
 
