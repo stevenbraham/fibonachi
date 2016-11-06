@@ -1,4 +1,10 @@
+# C-Sharp GitIgnore
 c#/bin
 c#/obj
 c#/project.lock.json
 c#/.vscode
+
+#PHP GitIgnore
+
+php/vendor
+php/composer.lock
